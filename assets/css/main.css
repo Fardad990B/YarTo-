@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+:root { font-family: Vazirmatn, Tahoma, sans-serif; color: #17324d; background: #f8fafc; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, a, input, select, textarea { min-height: 44px; }
+button, a { -webkit-tap-highlight-color: transparent; }
+.focus-ring:focus-visible { outline: 3px solid #f59e0b; outline-offset: 3px; }
