@@ -1,10 +1,11 @@
 <template>
-  <div class="mx-auto max-w-3xl py-10 text-center sm:py-20">
-    <div class="mx-auto mb-6 grid size-20 place-items-center rounded-3xl bg-teal-700 text-4xl font-bold text-white shadow-lg">ی</div>
-    <p class="mb-3 text-sm font-semibold text-teal-700">دستیار ساده زندگی روزمره</p>
-    <h1 class="text-4xl font-black tracking-tight text-slate-900 sm:text-6xl">یار تو</h1>
-    <p class="mx-auto mt-5 max-w-xl text-lg leading-9 text-slate-600">کارهای روزانه، برنامه‌ها و مسیر زندگی را ساده‌تر و آرام‌تر مدیریت کن.</p>
-    <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row"><NuxtLink to="/register" class="focus-ring rounded-xl bg-teal-700 px-7 py-3 font-bold text-white hover:bg-teal-800">شروع رایگان</NuxtLink><NuxtLink to="/login" class="focus-ring rounded-xl border border-slate-300 bg-white px-7 py-3 font-bold text-slate-700 hover:bg-slate-50">ورود به حساب</NuxtLink></div>
-    <p class="mt-8 text-sm text-slate-500">استفاده از یار تو رایگان است.</p>
-  </div>
+  <div class="relative mx-auto max-w-5xl overflow-hidden rounded-[32px] bg-white shadow-xl shadow-blue-950/10"><div class="gradient-brand absolute inset-x-0 top-0 h-72"></div><div class="relative px-6 pb-10 pt-10 sm:px-12 sm:pt-14"><div class="flex items-center justify-between"><NuxtLink to="/" class="flex items-center gap-3 text-white"><span class="grid size-11 place-items-center rounded-2xl bg-teal-300 text-xl font-black text-blue-950">ی</span><span><strong class="block">یار تو</strong><small class="text-xs text-blue-100/70">دستیار ساده زندگی</small></span></NuxtLink><NuxtLink to="/login" class="focus-ring rounded-xl border border-white/20 px-4 py-2 text-sm font-bold text-white hover:bg-white/10">ورود</NuxtLink></div><div class="mx-auto max-w-2xl pt-20 text-center text-white sm:pt-24"><p class="text-sm font-bold text-teal-200">برای روزهای ساده‌تر</p><h1 class="mt-4 text-4xl font-black leading-tight sm:text-6xl">همراه کوچک تو<br><span class="text-teal-200">برای هر روز</span></h1><p class="mx-auto mt-5 max-w-lg text-sm leading-8 text-blue-100/80 sm:text-base">کارهای روزانه، برنامه‌ها و مسیر زندگی را ساده‌تر و آرام‌تر مدیریت کن.</p><div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row"><NuxtLink to="/register" class="focus-ring rounded-xl bg-teal-300 px-7 py-3 font-black text-blue-950 transition hover:bg-teal-200">شروع رایگان ←</NuxtLink><NuxtLink to="/support" class="focus-ring rounded-xl border border-white/20 px-7 py-3 font-bold text-white hover:bg-white/10">آشنایی با سازنده</NuxtLink></div></div><div class="mx-auto mt-14 grid max-w-3xl gap-3 sm:grid-cols-3"><div v-for="item in highlights" :key="item.title" class="surface rounded-2xl p-5 text-center"><span class="mx-auto grid size-11 place-items-center rounded-xl bg-teal-50 text-xl text-teal-700">{{ item.icon }}</span><strong class="mt-3 block text-sm text-slate-900">{{ item.title }}</strong><p class="mt-1 text-xs leading-6 text-slate-500">{{ item.text }}</p></div></div></div></div>
 </template>
+
+<script setup lang="ts">
+const highlights = [
+  { icon: '✓', title: 'ساده و روشن', text: 'هر صفحه فقط برای یک هدف' },
+  { icon: '⌂', title: 'همراه روزانه', text: 'برای خانه، کار و زندگی' },
+  { icon: '◈', title: 'رایگان و شخصی', text: 'اطلاعاتت فقط برای خودت' }
+]
+</script>

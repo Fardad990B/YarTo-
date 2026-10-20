@@ -1,8 +1,25 @@
 @import "tailwindcss";
+@import "@fontsource-variable/vazirmatn";
+@import "@fontsource-variable/inter";
 
-:root { font-family: Vazirmatn, Tahoma, sans-serif; color: #17324d; background: #f8fafc; }
+:root {
+  font-family: 'Vazirmatn Variable', Tahoma, sans-serif;
+  color: #18243b;
+  background: #f5f7fb;
+  font-synthesis: none;
+}
+
 * { box-sizing: border-box; }
+html { background: #f5f7fb; }
 body { margin: 0; min-width: 320px; }
 button, a, input, select, textarea { min-height: 44px; }
 button, a { -webkit-tap-highlight-color: transparent; }
-.focus-ring:focus-visible { outline: 3px solid #f59e0b; outline-offset: 3px; }
+button:disabled { opacity: .72; }
+.focus-ring:focus-visible { outline: 3px solid #5eead4; outline-offset: 3px; }
+.font-latin { font-family: Inter, 'Vazirmatn Variable', sans-serif; }
+.app-shell { background: #f5f7fb; }
+.surface { border: 1px solid #e9edf5; background: #fff; box-shadow: 0 12px 32px rgba(38, 54, 88, .06); }
+.nav-active { background: rgba(45, 212, 191, .14); color: #99f6e4; }
+.gradient-brand { background: linear-gradient(135deg, #172554 0%, #273b82 55%, #0f766e 140%); }
+.gradient-welcome { background: linear-gradient(115deg, #172554 0%, #30499a 65%, #0f766e 135%); }
+.soft-grid { background-image: radial-gradient(#dbe3f0 1px, transparent 1px); background-size: 19px 19px; }

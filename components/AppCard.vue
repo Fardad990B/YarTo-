@@ -1,1 +1,1 @@
-<template><div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><slot /></div></template>
+<template><div class="surface rounded-[24px] p-5 sm:p-7"><slot /></div></template>
