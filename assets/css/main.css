@@ -1,9 +1,36 @@
 @import "tailwindcss";
-@import "@fontsource-variable/vazirmatn";
-@import "@fontsource-variable/inter";
+
+@font-face {
+  font-family: 'YarTo Vazirmatn';
+  src: url('../fonts/vazirmatn-arabic-wght-normal.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'YarTo Vazirmatn';
+  src: url('../fonts/vazirmatn-latin-wght-normal.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'YarTo Inter';
+  src: url('../fonts/inter-latin-wght-normal.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'YarTo Inter';
+  src: url('../fonts/inter-latin-ext-wght-normal.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
 
 :root {
-  font-family: 'Vazirmatn Variable', Tahoma, sans-serif;
+  font-family: 'YarTo Vazirmatn', Tahoma, sans-serif;
   color: #18243b;
   background: #f5f7fb;
   font-synthesis: none;
@@ -16,7 +43,7 @@ button, a, input, select, textarea { min-height: 44px; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button:disabled { opacity: .72; }
 .focus-ring:focus-visible { outline: 3px solid #5eead4; outline-offset: 3px; }
-.font-latin { font-family: Inter, 'Vazirmatn Variable', sans-serif; }
+.font-latin { font-family: 'YarTo Inter', 'YarTo Vazirmatn', sans-serif; }
 .app-shell { background: #f5f7fb; }
 .surface { border: 1px solid #e9edf5; background: #fff; box-shadow: 0 12px 32px rgba(38, 54, 88, .06); }
 .nav-active { background: rgba(45, 212, 191, .14); color: #99f6e4; }
